@@ -4539,6 +4539,7 @@ END
        mechanisms(5) pkix(7) id-mod(0) id-mod-pkix1-implicit-02(59)}
    DEFINITIONS IMPLICIT TAGS ::=
    BEGIN
+   EXPORTS ALL; -- line added by james.edington@uah.edu in an effort to fix Elixir error `AlgorithmInformation-2009:95: 'KeyUsage' is not exported from PKIX1Implicit-2009`
    IMPORTS
 
    AttributeSet{}, EXTENSION, ATTRIBUTE
