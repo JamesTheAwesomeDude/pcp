@@ -1,0 +1,10 @@
+diff --git a/asn1crypto/pem.py b/asn1crypto/pem.py
+index 511ea4b..b714e18 100644
+--- a/asn1crypto/pem.py
++++ b/asn1crypto/pem.py
+@@ -141 +141 @@ def _unarmor(pem_bytes):
+-    base64_data = b''
++    base64_data = bytearray()
+@@ -180 +180 @@ def _unarmor(pem_bytes):
+-                base64_data = b''
++                base64_data = bytearray()
